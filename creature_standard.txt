@@ -326,19 +326,22 @@ creature_standard
 	Now we'll declare the specific castes.
 
 	[CASTE:FEMALE]
-		The gender tag lets it know how breeding works.
 		[FEMALE]
 		[MULTIPLE_LITTER_RARE]
+		[SKILL_RATES:100:NONE:NONE:NONE]
+
 		To add beards, put square brackets around the following:
 		BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS
 	[CASTE:MALE]
 		[MALE]
 		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+		[SKILL_RATES:100:NONE:NONE:NONE]
 
 	This command lets you select all of the castes again.
-
 	[SELECT_CASTE:ALL]
+		Remove skill decay
+		[SKILL_RATES:100:NONE:NONE:NONE]
 
 		Now we'll select all of the hair tissue layers we can find so that we can add colorations to them.  Even if the castes have different tissue layers, it'll find the layers and establish modifiers for each of the castes properly.
 

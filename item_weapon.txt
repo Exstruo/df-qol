@@ -175,7 +175,7 @@ Penetration size currently only matters for edged attacks.
 [NAME:long sword:long swords]
 [SIZE:700]
 [SKILL:SWORD]
-[TWO_HANDED:57500]
+[TWO_HANDED:60000]
 [MINIMUM_SIZE:52500]
 [MATERIAL_SIZE:4]
 [ATTACK:EDGE:60000:6000:slash:slashes:NO_SUB:1250]

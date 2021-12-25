@@ -142,12 +142,45 @@ reaction_qol
 	[SKILL:MASONRY]
 
 ##################################################################
-### Smelting Reactions
+### Smelter Reactions
 ##################################################################
 [REACTION:QOL_ANTHRACITE_TO_COKE]
     [NAME:make coke from anthracite coal]
     [BUILDING:SMELTER:NONE]
     [REAGENT:A:1:BOULDER:NONE:INORGANIC:ANTHRACITE]
-    [PRODUCT:100:12:BAR:NO_SUBTYPE:COAL:COKE][PRODUCT_DIMENSION:150]
+    [PRODUCT:100:12:BAR:NONE:COAL:COKE]
+    [PRODUCT_DIMENSION:150]
     [FUEL]
     [SKILL:SMELT]
+
+##################################################################
+### Incinerator Reactions
+##################################################################
+[REACTION:QOL_INCINERATE_CORPSE]
+    [NAME:Incinerate corpse]
+    [BUILDING:QOL_INCINERATOR:NONE]
+    [REAGENT:A:1:CORPSE:CORPSE:NONE:NONE]
+    [USE_BODY_COMPONENT]
+    [PRODUCT:100:1:BAR:NONE:ASH:NO_MATGLOSS]
+    [PRODUCT_DIMENSION:150]
+    [SKILL:SMELT]
+    [FUEL]
+
+[REACTION:QOL_INCINERATE_PARTS]
+    [NAME:Incinerate body parts]
+    [BUILDING:QOL_INCINERATOR:NONE]
+    [REAGENT:A:1:CORPSEPIECE:CORPSEPIECE:NONE:NONE]
+    [USE_BODY_COMPONENT]
+    [PRODUCT:100:1:BAR:NONE:ASH:NO_MATGLOSS]
+    [PRODUCT_DIMENSION:150]
+    [SKILL:SMELT]
+    [FUEL]
+
+[REACTION:QOL_INCINERATE_VERMIN]
+    [NAME:Incinerate vermin remains]
+    [BUILDING:QOL_INCINERATOR:NONE]
+    [REAGENT:A:1:REMAINS:NONE:NONE:NONE]
+    [PRODUCT:100:1:BAR:NONE:ASH:NO_MATGLOSS]
+    [PRODUCT_DIMENSION:150]
+    [SKILL:SMELT]
+    [FUEL]

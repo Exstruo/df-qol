@@ -140,8 +140,8 @@ creature_standard
 	These tags establish the growth phases of the creature's life.  The format is (BODY_SIZE|<year>|<day>|<average size>).
 
 	[BODY_SIZE:0:0:3000]
-	[BODY_SIZE:1:168:15000]
-	[BODY_SIZE:12:0:60000]
+	[BODY_SIZE:1:0:15000]
+	[BODY_SIZE:5:0:60000]
 
 	These body modifiers give individual dwarves different characteristics.  In the case of HEIGHT, BROADNESS and LENGTH, the modifier is also a percentage change to the BODY_SIZE of the individual creature.  The seven numbers afterward give a distribution of ranges.  Each interval has an equal chance of occurring.
 
@@ -219,7 +219,7 @@ creature_standard
 
 	These are as before.
 
-	[MAXAGE:150:170]
+	[MAXAGE:170:200]
 
 	Attack definitions are formatted as follows:
 
@@ -271,7 +271,7 @@ creature_standard
 	[BABY:1]
 	[GENERAL_BABY_NAME:dwarven baby:dwarven babies]
 	[BABYNAME:dwarven baby:dwarven babies]
-	[CHILD:12]
+	[CHILD:5]
 	[GENERAL_CHILD_NAME:dwarven child:dwarven children]
 	[CHILDNAME:dwarven child:dwarven children]
 	[EQUIPS]
